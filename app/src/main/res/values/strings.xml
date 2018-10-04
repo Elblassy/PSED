@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">PSED</string>
+    <string name="title_activity_speakers">Speakers</string>
+    <string name="title_activity_projects">Projects</string>
+
+    <string name="action_settings">Settings</string>
+
+
+    <string name="psed_2009">PSED 2009 was held on 28/10/2009,\n
+        at Faculty of Engineering campus, Raising the slogan “Together… Start”.\n
+        Projects exhibition included 28 graduation projects,\n
+        and the following sessions were held:\n\n
+        "•The Strength of Enthusiasm – Safa Mustafa.\n"
+        "•IEEE Orientation Session.\n"
+        •ASTF Orientation Session.\n
+        •Exploration Center for Science and Technology Orientation Session.\n\n
+The event was organized by 25 volunteers, with ITIDA, JELECOM, and KAPCI sponsorship.\n
+        It was attended by 1000 visitors, in addition to 150 VIPs.\n
+</string>
+
+    <string name="psed_2010">PSED 2010 was held on 14/12/2010,\n
+        at Faculty of Engineering campus, Raising the slogan “Believe and Achieve”.\n
+        Projects exhibition included 26 graduation projects, and the following sessions were held:\n\n
+•Success Engineering – Dr. Emad Eldeen Shata.\n
+•A Successful Examples of Small Engineering Projects – Eng. Nasr Elkotby.\n
+•International Transport and Logistics – Dr. Muhammad Gharib.\n
+•Preparation, Qualification and Accreditation of Trainers – Dr. Emad Shata.\n
+•East of Port Said Project – Dr. Ahmed Amen.\n
+•Effective Communication Skills.\n
+•Development Projects.\n
+•Vision Soft.\n
+•JELECOM Session.\n
+•MAZ Session.\n
+•Touchline Session.\n
+•Telecom Egypt Session\n\n
+The event was organized by 40 volunteers, with KAPCI, SCCT, AL WATEX, Arab Academy for Science and Technology, KARAWYA, Telecom Egypt, JELECOM, MAZ, Touchline, and Marine Engineering and Shipbuilding Engineering Project sponsorship. It was attended by 1500 visitors, in addition to 60 VIPs.
+</string>
+
+    <string name="psed_2011">PSED 2011 was held on 21/11/2011,\n
+        at Faculty of Engineering campus, Raising the slogan “A Chance to Challenge”.\n
+        Projects exhibition included 32 graduation projects, and the following sessions were held:\n\n
+•Challenge and Volition – Safa Mostafa\n
+•Maintenance Planning – Eng. Emad Azmi\n
+•Automation – Dr. Ahmed Hafez.\n
+•Kinetic Sensors – Microsoft.\n
+•“I am = Engineer – 1” - Eng. Mahmoud Darwish.\n
+•JELECOM Session.\n\n
+The event was organized by 29 volunteers, with KAPCI, JELECOM, MAZ, KARAWYA, Al WATEX, Touchline, Orascom for Training, Harvest, and Direct English sponsorship. It was attended by 2000 visitors, in addition to 80 VIPs.
+</string>
+
+</resources>

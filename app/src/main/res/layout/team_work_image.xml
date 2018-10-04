@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="3dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:src="@drawable/computer"
+        app:civ_border_color="@color/gold"
+        app:civ_border_width="6dp"
+        />
+
+
+
+</LinearLayout>

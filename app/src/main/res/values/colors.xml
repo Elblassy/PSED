@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#b6b6c2</color>
+    <color name="colorPrimaryDark">#b6b6c2</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="background">#b6b6c2</color>
+    <color name="gold">#FFA59237</color>
+    <color name="black">#000000</color>
+
+
+    <array name="array">
+        <item>@color/black</item>
+        <item>@color/black</item>
+        <item>@color/gold</item>
+        <item>@color/gold</item>
+
+    </array>
+
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    tools:context=".activities.Projects">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list_item_projects"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:orientation="vertical" />
+
+<com.jpardogo.android.googleprogressbar.library.GoogleProgressBar
+    android:id="@+id/progressBar"
+    android:layout_width="60dp"
+    android:layout_height="60dp"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    app:type="chrome_floating_circles"
+    app:colors="@array/array"/>
+
+    <ImageView
+        android:id="@+id/emptyview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:scaleType="fitXY"
+        android:src="@drawable/emptyview"/>
+
+    <ImageView
+        android:id="@+id/noInternetConnection"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:scaleType="fitXY"
+        android:src="@drawable/nointernet"/>
+
+</RelativeLayout>
+
