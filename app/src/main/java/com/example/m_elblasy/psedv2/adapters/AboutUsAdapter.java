@@ -45,7 +45,8 @@ public class AboutUsAdapter extends RecyclerView.Adapter<AboutUsAdapter.ViewHold
 
         final List<GrideList> gride = grideList.get(position);
         Log.i(TAG,"gride" + position);
-        GrideAdapter grideAdapter = new GrideAdapter(gride);
+
+        GrideAdapter grideAdapter = new GrideAdapter(context,gride);
 
         holder.gridView.setLayoutManager(new GridLayoutManager(context,4));
         holder.gridView.setItemAnimator(new DefaultItemAnimator());

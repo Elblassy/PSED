@@ -2,14 +2,11 @@ package com.example.m_elblasy.psedv2.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 
 import com.example.m_elblasy.psedv2.R;
 import com.example.m_elblasy.psedv2.adapters.AjendaAdapter;
-import com.example.m_elblasy.psedv2.adapters.StaggeredRecycleViewAdapter;
 
 import java.util.ArrayList;
 

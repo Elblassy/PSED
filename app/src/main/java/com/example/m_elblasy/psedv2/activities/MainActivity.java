@@ -9,11 +9,8 @@ import android.transition.Slide;
 import android.util.Log;
 import android.view.Gravity;
 import android.widget.TextView;
-
-
 import com.example.m_elblasy.psedv2.R;
 import com.example.m_elblasy.psedv2.adapters.StaggeredRecycleViewAdapter;
-
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;

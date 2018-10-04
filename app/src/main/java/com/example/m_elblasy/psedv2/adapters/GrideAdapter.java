@@ -1,5 +1,6 @@
 package com.example.m_elblasy.psedv2.adapters;
 
+import android.content.Context;
 import android.media.Image;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
@@ -11,6 +12,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.example.m_elblasy.psedv2.R;
 import com.example.m_elblasy.psedv2.list.GrideList;
 
@@ -18,10 +20,12 @@ import java.util.List;
 
 public class GrideAdapter extends RecyclerView.Adapter<GrideAdapter.ViewHolder> {
 
+    Context context;
     private List<GrideList> imageList;
     private static final String TAG = "GrideAdapter";
 
-    public GrideAdapter(List<GrideList> imageList) {
+    public GrideAdapter(Context context,List<GrideList> imageList) {
+        this.context = context;
         this.imageList = imageList;
     }
 
@@ -39,7 +43,10 @@ public class GrideAdapter extends RecyclerView.Adapter<GrideAdapter.ViewHolder> 
 
         final GrideList lists = imageList.get(position);
 
-        holder.imageView.setImageResource(lists.getImage());
+        Glide.with(context)
+                .asBitmap()
+                .load(lists.getImage())
+                .into(holder.imageView);
 
     }
 

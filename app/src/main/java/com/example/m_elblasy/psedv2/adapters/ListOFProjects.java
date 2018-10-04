@@ -1,7 +1,6 @@
 package com.example.m_elblasy.psedv2.adapters;
 
 import android.content.Context;
-import android.graphics.Bitmap;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -11,13 +10,9 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.android.volley.toolbox.ImageLoader;
-import com.android.volley.toolbox.NetworkImageView;
 import com.bumptech.glide.Glide;
-import com.bumptech.glide.request.RequestOptions;
 import com.example.m_elblasy.psedv2.CustomItemClickListener;
 import com.example.m_elblasy.psedv2.R;
-import com.example.m_elblasy.psedv2.database.AppController;
 import com.example.m_elblasy.psedv2.list.ProjectsList;
 
 import java.util.List;
@@ -28,7 +23,6 @@ public class ListOFProjects extends RecyclerView.Adapter<ListOFProjects.MyViewHo
     private List<ProjectsList> projectsLists;
     private Context context;
     CustomItemClickListener listener;
-    ImageLoader imageLoader = AppController.getInstance().getImageLoader();
 
 
     public ListOFProjects(Context context, List<ProjectsList> projectsLists, CustomItemClickListener listener) {
@@ -59,7 +53,10 @@ public class ListOFProjects extends RecyclerView.Adapter<ListOFProjects.MyViewHo
 
         holder.disOfProject.setText(list.getDis());
 
-        holder.imageOfProject.setImageBitmap(list.getImageOfProject());
+        Glide.with(context)
+                .asBitmap()
+                .load(list.getImageOfProject())
+                .into(holder.imageOfProject);
 
 
         Log.i(TAG, "onBindViewHolder: " + projectsLists.size());

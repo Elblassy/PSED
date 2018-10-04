@@ -30,7 +30,6 @@ public class AboutUs extends AppCompatActivity {
         lists = new ArrayList<>();
 
 
-
         getLists();
 
         initAnimation();
