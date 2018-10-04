@@ -9,6 +9,8 @@ import android.transition.Slide;
 import android.util.Log;
 import android.view.Gravity;
 import android.widget.TextView;
+
+import com.bumptech.glide.Glide;
 import com.example.m_elblasy.psedv2.R;
 import com.example.m_elblasy.psedv2.adapters.StaggeredRecycleViewAdapter;
 import java.text.SimpleDateFormat;
@@ -44,7 +46,6 @@ public class MainActivity extends AppCompatActivity {
         setupWindowAnimations();
 
     }
-
 
     private void setupWindowAnimations() {
 

@@ -239,4 +239,21 @@ public class Speakers extends AppCompatActivity implements LoaderManager.LoaderC
         getWindow().setEnterTransition(enterTransition);
     }
 
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        Glide.get(this).clearMemory();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Glide.get(this).clearMemory();
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Glide.get(this).clearMemory();
+    }
 }

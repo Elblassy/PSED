@@ -7,6 +7,7 @@ import android.support.v7.widget.RecyclerView;
 import android.transition.Explode;
 import android.view.Window;
 
+import com.bumptech.glide.Glide;
 import com.example.m_elblasy.psedv2.R;
 import com.example.m_elblasy.psedv2.adapters.HistoryAdapter;
 
@@ -75,5 +76,22 @@ public class HistoryOfPsed extends AppCompatActivity {
         recyclerView.setAdapter(historyAdapter);
     }
 
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        Glide.get(this).clearMemory();
+    }
 
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Glide.get(this).clearMemory();
+    }
+
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Glide.get(this).clearMemory();
+    }
 }

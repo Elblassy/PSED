@@ -13,6 +13,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
 import com.example.m_elblasy.psedv2.R;
 import com.example.m_elblasy.psedv2.list.GrideList;
 
@@ -44,8 +45,9 @@ public class GrideAdapter extends RecyclerView.Adapter<GrideAdapter.ViewHolder> 
         final GrideList lists = imageList.get(position);
 
         Glide.with(context)
-                .asBitmap()
                 .load(lists.getImage())
+                .thumbnail(0.5f)
+                .apply(new RequestOptions().skipMemoryCache(true).override(400,500))
                 .into(holder.imageView);
 
     }

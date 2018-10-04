@@ -17,6 +17,8 @@ import android.view.Window;
 import android.view.animation.AnticipateOvershootInterpolator;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
+
+import com.bumptech.glide.Glide;
 import com.example.m_elblasy.psedv2.R;
 import com.example.m_elblasy.psedv2.adapters.CellsProjectsAdapter;
 import com.example.m_elblasy.psedv2.list.ItemsForCells;
@@ -118,5 +120,24 @@ public class Projects extends AppCompatActivity implements LoaderManager.LoaderC
         enterTransition.setDuration(getResources().getInteger(R.integer.anim_duration_very_long));
         enterTransition.setInterpolator(new AnticipateOvershootInterpolator());
         getWindow().setEnterTransition(enterTransition);
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        Glide.get(this).clearMemory();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Glide.get(this).clearMemory();
+    }
+
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Glide.get(this).clearMemory();
     }
 }

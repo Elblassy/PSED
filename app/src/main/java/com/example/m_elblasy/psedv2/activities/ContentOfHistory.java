@@ -10,6 +10,7 @@ import android.view.animation.AnticipateOvershootInterpolator;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.example.m_elblasy.psedv2.R;
 
 public class ContentOfHistory extends AppCompatActivity {
@@ -53,5 +54,20 @@ public class ContentOfHistory extends AppCompatActivity {
         getWindow().setEnterTransition(enterTransition);
     }
 
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        Glide.get(this).clearMemory();
+    }
 
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Glide.get(this).clearMemory();
+    }
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Glide.get(this).clearMemory();
+    }
 }

@@ -32,6 +32,7 @@ public class ProjectsLoader extends AsyncTaskLoader<List<ItemsForCells>> {
         return projects;
     }
 
+
     @Override
     protected void onStopLoading() {
         super.onStopLoading();
