@@ -49,10 +49,8 @@ public class Speakers extends AppCompatActivity implements LoaderManager.LoaderC
     private SpeakersAdapter mAdapter;
     private static final int SPEAKER_LOADER_ID = 0;
     ArrayList<ModelOfData> data;
-    private TextView mEmptyStateTextView;
     TextView disc, name;
     ImageView imageOfSpeaker, imageOfTitle;
-    LoaderManager loaderManager;
     Animation fadeIn, fadeIn2;
     private static final String TAG = "Speakers";
     private Dialog myDialog;
