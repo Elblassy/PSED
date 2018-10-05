@@ -18,13 +18,8 @@
             android:name=".activities.MainActivity"
             android:configChanges="orientation"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.main">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:theme="@style/AppTheme.main"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
         <activity
             android:name=".activities.Speakers"
             android:configChanges="orientation"
@@ -44,8 +39,18 @@
             android:name=".activities.HistoryOfPsed"
             android:configChanges="orientation"
             android:screenOrientation="portrait" />
-        <activity android:name=".activities.ContentOfHistory" />
-        <activity android:name=".activities.Ajenda"></activity>
+        <activity android:name=".activities.ContentOfHistory"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activities.Ajenda"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activities.SplashScreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

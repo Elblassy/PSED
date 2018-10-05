@@ -1,6 +1,8 @@
 package com.example.m_elblasy.psedv2.activities;
 
 
+import android.content.Intent;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
@@ -9,8 +11,6 @@ import android.transition.Slide;
 import android.util.Log;
 import android.view.Gravity;
 import android.widget.TextView;
-
-import com.bumptech.glide.Glide;
 import com.example.m_elblasy.psedv2.R;
 import com.example.m_elblasy.psedv2.adapters.StaggeredRecycleViewAdapter;
 import java.text.SimpleDateFormat;
@@ -27,12 +27,14 @@ public class MainActivity extends AppCompatActivity {
     private ArrayList<Integer> mImageUrls = new ArrayList<>();
     private ArrayList<String> mNames = new ArrayList<>();
 
+
     private TextView view;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         view = findViewById(R.id.date);
         Date today = Calendar.getInstance().getTime();//getting date
