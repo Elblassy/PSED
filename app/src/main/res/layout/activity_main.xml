@@ -24,6 +24,7 @@
         android:layout_height="wrap_content"
         android:paddingLeft="10dp"
         android:text="PSED"
+        android:textStyle="bold"
         android:textColor="@color/gold"
         android:textSize="40sp" />
 
@@ -35,7 +36,6 @@
         android:layout_height="match_parent"
         android:padding="8dp"
         android:orientation="vertical">
-
     </android.support.v7.widget.RecyclerView>
 
 

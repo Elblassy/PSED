@@ -14,7 +14,7 @@
         "•IEEE Orientation Session.\n"
         •ASTF Orientation Session.\n
         •Exploration Center for Science and Technology Orientation Session.\n\n
-The event was organized by 25 volunteers, with ITIDA, JELECOM, and KAPCI sponsorship.\n
+The event was organized by 25 volunteers, with ITIDA, JELECOM, and KAPCI sponsorship.\n\n
         It was attended by 1000 visitors, in addition to 150 VIPs.\n
 </string>
 
@@ -33,19 +33,123 @@ The event was organized by 25 volunteers, with ITIDA, JELECOM, and KAPCI sponsor
 •MAZ Session.\n
 •Touchline Session.\n
 •Telecom Egypt Session\n\n
-The event was organized by 40 volunteers, with KAPCI, SCCT, AL WATEX, Arab Academy for Science and Technology, KARAWYA, Telecom Egypt, JELECOM, MAZ, Touchline, and Marine Engineering and Shipbuilding Engineering Project sponsorship. It was attended by 1500 visitors, in addition to 60 VIPs.
+The event was organized by 40 volunteers, with KAPCI, SCCT, AL WATEX, Arab Academy for Science and Technology, KARAWYA, Telecom Egypt, JELECOM, MAZ, Touchline, and Marine Engineering and Shipbuilding Engineering Project sponsorship.\n\n
+        It was attended by 1500 visitors, in addition to 60 VIPs.
 </string>
 
     <string name="psed_2011">PSED 2011 was held on 21/11/2011,\n
         at Faculty of Engineering campus, Raising the slogan “A Chance to Challenge”.\n
-        Projects exhibition included 32 graduation projects, and the following sessions were held:\n\n
+        Projects exhibition included 32 graduation projects,and the following sessions were held:\n\n
 •Challenge and Volition – Safa Mostafa\n
 •Maintenance Planning – Eng. Emad Azmi\n
 •Automation – Dr. Ahmed Hafez.\n
 •Kinetic Sensors – Microsoft.\n
 •“I am = Engineer – 1” - Eng. Mahmoud Darwish.\n
 •JELECOM Session.\n\n
-The event was organized by 29 volunteers, with KAPCI, JELECOM, MAZ, KARAWYA, Al WATEX, Touchline, Orascom for Training, Harvest, and Direct English sponsorship. It was attended by 2000 visitors, in addition to 80 VIPs.
+The event was organized by 29 volunteers, with KAPCI, JELECOM, MAZ, KARAWYA, Al WATEX, Touchline, Orascom for Training, Harvest, and Direct English sponsorship.\n\n
+        It was attended by 2000 visitors, in addition to 80 VIPs.
+</string>
+
+    <string name="psed_2012">PSED 2012 was held on 26/11/2012,\n
+        at Faculty of Engineering campus, Raising the slogan “Act to Win”.\n
+        Projects exhibition included 36 graduation projects,\nand the following sessions were held:\n\n
+•Intellectual Property Rights – Mr. Refat Mousa.\n
+•Sandwich Structures – Dr. Tarek Sharaf.\n
+•The Art of Failure – Eng. Mahmoud Darwesh.\n
+•JELECOM session – Eng. Mohamed Youssef.\n\n
+The event was organized by 35 volunteers,\n
+        with NTRA as a platinum sponsor, and JELECOM as a silver sponsor,\n besides MAZ, ZAITOUN, KARAWYA, Cairo Marine, KAPCI, AL WATEX, Touchline, and Robota sponsorship.\n\n
+        It was attended by 3500 visitors, in addition to 300 VIPs.
+
+</string>
+
+    <string name="psed_2013">PSED 2013 was held on 25/11/2013,\n
+        at Faculty of Engineering campus, Raising the slogan “Let Your Idea Shine”.\n
+        Projects exhibition included 36 graduation projects,\nand the following sessions were held:\n\n
+•Eng. Dalia Al-saadany.\n
+•Outshine Yourself – Dr. Mona Arishi.\n
+•SCCT Session.\n
+•JELECOM session.\n
+•Dredging for Development – Dr. Ahmed Al-Hattab\n
+•Start Your Own Business – Eng. Mohamed Negm\n
+•Intellectual Property Rights – Prof. Dr, Muhammd Reda Abd Al-kader.\n
+•Serving the Environment and the Society – Prof. Dr. Muhammd Al-gendy.\n\n
+The event was organized by 48 volunteers,\n with the sponsorship of NTRA and KAPCI as platinum sponsors,\n
+        SANMAR and SCCT as silver sponsor, besides, ZAITOUN, KARAWYA, JELECOM, and AL WATEX as bronze sponsors.\n\n
+        It was attended by 2000 visitors, in addition to 300 VIPs.
+
+</string>
+
+    <string name="psed_2014">PSED 2014 was held on 24-25/11/2014,\n
+        at Faculty of Engineering campus, Raising the slogan “Rise”.\n
+        Projects exhibition included 45 graduation projects,\n
+        and the following sessions were held:\n\n
+•Intellectual Property Rights – Prof. Dr, Muhammd Reda Abd Al-kader.\n
+•Other Absurd Things – Eng. Yehia Reda Abd Al-kawy.\n
+•NTRA – Dr. Ayman Ragab.\n
+•The Art of Failure – Eng. Mahmoud Darwesh.\n
+•JELECOM Session.\n
+•Kareem Samara.\n
+•Eng. Ahmed Meto.\n
+The event was organized by 50 volunteers,\n
+        with the sponsorship of SCCT, NTRA and KAPCI as platinum sponsors,\n
+        besides, ZAITOUN, and JELECOM as bronze sponsors.\n\n
+        It was attended by 2400 visitors, in addition to 300 VIPs.
+
+</string>
+
+    <string name="psed_2015">PSED 2015 was held on 2-3/11/2015,\n
+        at Faculty of Engineering campus, Raising the slogan “Rise”. \n
+        Projects exhibition included 19 graduation projects,
+        along with 11 undergraduate projects,\n
+        and the following sessions were held:\n\n
+•Pursuing Success in Life – Eng. Hesham Al-gamal\n
+•Engineering Optimization Algorithms – Dr. Ayman Ragab\n
+•How to Get a Scholarship – Abdullah Amer.\n
+•KELECOM Session.\n
+•MAZ Session.\n
+•Licensed Communication Services in Egypt – Eng. Muhammad Ibrahim.\n\n
+The event was organized by 58 volunteers,\n
+        with the sponsorship of NTRA and KAPCI as platinum sponsors, besides, ZAITOUN, MAZ, KARAWYA, and JELECOM as silver sponsors.\n\n
+        It was attended by 1500 visitors, in addition to 400 VIPs.
+
+</string>
+
+    <string name="psed_2016">PSED 2016 was held on 7-8/11/2016,\n
+        at Faculty of Engineering campus and Port Said Hotel respectively,\n
+        Raising the slogan “Leave a Legacy”.\n
+        Projects exhibition included 27 graduation projects, along with 13 undergraduate projects,\n
+        and the following sessions were held:\n\n
+•Linking Nile River to Kongo River – Eng. Ibrahim El-Fayoumy\n
+•NTRA – Dr. Fadel Digham\n
+•NTRA – Eng. Wesam Seddik.\n
+•Small Efforts – Mr. Hossam Heikal.\n
+•Science Communication in Egypt - Eng. Ahmed El-Ghandor (Da7ee7).\n
+•Port Said Tunnels Project – Eng. Hesham El-Sharhawy.\n
+•JELECOM Session.\n
+•MAZ Session.\n
+The event was organized by 73 volunteers,\n
+        with the sponsorship of NTRA and KAPCI as platinum sponsors, besides, ZAITOUN, MAZ, and JELECOM as golden sponsors.\n\n
+        It was attended by 2800 visitors, in addition to 400 VIPs.
+
+</string>
+
+    <string name="psed_2017">PSED 2017 was held on 6-7/11/2017,\n
+        at Faculty of Engineering campus and Port Said Hotel respectively,\n
+        Raising the slogan “Seek the Unknown - Sapiens”. Projects exhibition included 33 graduation projects, along with 21 undergraduate projects,\n
+        and the following sessions were held:\n\n
+•History of WIFI – Dr. Hatem Zaghloul.\n
+•Technology of tomorrow – Dr. Heba Saleh.\n
+•4G in Egypt – Eng. Amr Abbas.\n
+•VR and AR in education – Eng. Hesham Hosny.\n
+•How to get a scholarship – Eng. Abdullah Samy.\n
+•Pursuit and certainty – Mr. Mohamed Shalaby.\n
+•Historical cities – Dr. Soheir Zaki Hawas.\n
+•Electromagnetic waves effect on humans – Dr. Ayman Ragab.\n
+The event was organized by 80 volunteers,\n
+        in partnership with NTRA, and the sponsorship of KAPCI as platinum sponsor, Osool Construction as golden sponsors, and JELECOM as bronze sponsor.\n\n
+        It was attended by 3200 visitors, in addition to 400 VIPs.
+
 </string>
 
 </resources>

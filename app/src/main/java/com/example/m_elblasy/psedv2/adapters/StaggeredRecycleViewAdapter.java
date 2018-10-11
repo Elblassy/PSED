@@ -113,8 +113,9 @@ public class StaggeredRecycleViewAdapter extends RecyclerView.Adapter<StaggeredR
                         break;
 
                     case 4:
+                        ActivityOptions options4 = ActivityOptions.makeSceneTransitionAnimation((Activity) mContext);
                         Intent intent4 = new Intent(mContext, Ajenda.class);
-                        mContext.startActivity(intent4);
+                        mContext.startActivity(intent4,options4.toBundle());
                         break;
 
                     case 5:

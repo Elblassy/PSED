@@ -1,6 +1,5 @@
 package com.example.m_elblasy.psedv2.adapters;
 
-import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -9,18 +8,17 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.example.m_elblasy.psedv2.R;
+import com.example.m_elblasy.psedv2.list.AjendaList;
 
 import java.util.ArrayList;
 
 public class AjendaAdapter extends RecyclerView.Adapter<AjendaAdapter.ViewHolder> {
 
 
-    private ArrayList<String> title;
-    private ArrayList<String> time;
+    private ArrayList<AjendaList> list;
 
-    public AjendaAdapter( ArrayList<String> title, ArrayList<String> time) {
-        this.title = title;
-        this.time = time;
+    public AjendaAdapter(ArrayList<AjendaList> list) {
+        this.list = list;
     }
 
     @NonNull
@@ -34,26 +32,36 @@ public class AjendaAdapter extends RecyclerView.Adapter<AjendaAdapter.ViewHolder
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+        final  AjendaList ajendaList = list.get(position);
 
-        holder.time.setText(time.get(position));
-        holder.title.setText(title.get(position));
+
+        holder.time.setText(ajendaList.getTime());
+        holder.date.setText(ajendaList.getDate());
+        holder.event.setText(ajendaList.getEvent());
+        holder.name.setText(ajendaList.getName());
+
     }
 
     @Override
     public int getItemCount() {
-        return title.size();
+        return list.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
 
         TextView time;
-        TextView title;
+        TextView name;
+        TextView date;
+        TextView event;
 
         public ViewHolder(View itemView) {
             super(itemView);
 
-            time = itemView.findViewById(R.id.time_ajenda);
-            title = itemView.findViewById(R.id.title_ajenda);
+            time = itemView.findViewById(R.id.time);
+            name = itemView.findViewById(R.id.name);
+            event = itemView.findViewById(R.id.event);
+            date = itemView.findViewById(R.id.date);
+
         }
     }
 }

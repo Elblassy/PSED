@@ -16,7 +16,7 @@
         app:cardCornerRadius="10dp"
         android:clipToPadding="false"
         android:clipChildren="false"
-        android:elevation="20dp"
+        app:cardElevation="6dp"
         app:cardPreventCornerOverlap="false">
 
         <RelativeLayout
@@ -44,9 +44,9 @@
                 android:layout_marginTop="10dp"
                 android:gravity="bottom"
                 android:shadowColor="#000"
-                android:shadowDx="3"
-                android:shadowDy="3"
-                android:shadowRadius="20"
+                android:shadowDx="4"
+                android:shadowDy="4"
+                android:shadowRadius="30"
                 android:text="PSED"
                 android:textColor="#FFF"
                 android:textSize="28sp" />

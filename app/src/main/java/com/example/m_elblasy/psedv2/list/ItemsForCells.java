@@ -57,11 +57,14 @@ public class ItemsForCells {
         ArrayList<ItemsForCells> items = new ArrayList<>();
         items.add(new ItemsForCells(R.drawable.computer));
         items.add(new ItemsForCells(R.drawable.communication));
-        items.add(new ItemsForCells(R.drawable.civil));
         items.add(new ItemsForCells(R.drawable.power));
+         items.add(new ItemsForCells(R.drawable.arch));
+         items.add(new ItemsForCells(R.drawable.civil));
+         items.add(new ItemsForCells(R.drawable.production));
         items.add(new ItemsForCells(R.drawable.mechanic));
-        items.add(new ItemsForCells(R.drawable.marine));
-        items.add(new ItemsForCells(R.drawable.arch));
-        return items;
+        items.add(new ItemsForCells(R.drawable.marin));
+         items.add(new ItemsForCells(R.drawable.gas));
+         items.add(new ItemsForCells(R.drawable.chemical));
+         return items;
     }
 }

@@ -2,8 +2,8 @@ package com.example.m_elblasy.psedv2.list;
 
 public class Questions {
 
-    String name;
-    String question;
+    private String name;
+    private String question;
 
     public Questions(String name, String question) {
         this.name = name;

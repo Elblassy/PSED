@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activities.Ajenda"
-    android:background="#000"
-
-    android:paddingLeft="7dp">
+    android:background=" #e7e5e5 "
+    android:paddingTop="50dp">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/ajenda_recycler"
@@ -17,4 +16,32 @@
 
     </android.support.v7.widget.RecyclerView>
 
-</android.support.constraint.ConstraintLayout>
+    <com.jpardogo.android.googleprogressbar.library.GoogleProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:colors="@array/array"
+        app:type="chrome_floating_circles" />
+
+    <ImageView
+        android:id="@+id/emptyview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:scaleType="fitXY"
+        android:src="@drawable/emptyview"/>
+
+    <ImageView
+        android:id="@+id/noInternetConnection"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:scaleType="fitXY"
+        android:src="@drawable/nointernet"/>
+
+
+</RelativeLayout>

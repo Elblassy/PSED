@@ -51,12 +51,23 @@ public class HistoryOfPsed extends AppCompatActivity {
 
         image.add(R.drawable.ninein);
         image.add(R.drawable.tenin);
+        image.add(R.drawable.elevin);
+        image.add(R.drawable.tewin);
+        image.add(R.drawable.threein);
+        image.add(R.drawable.fourin);
+        image.add(R.drawable.fivein);
         image.add(R.drawable.sixin);
-        image.add(R.drawable.fifein);
+        image.add(R.drawable.sevenin);
 
         text.add(getResources().getString(R.string.psed_2009));
         text.add(getResources().getString(R.string.psed_2010));
         text.add(getResources().getString(R.string.psed_2011));
+        text.add(getResources().getString(R.string.psed_2012));
+        text.add(getResources().getString(R.string.psed_2013));
+        text.add(getResources().getString(R.string.psed_2014));
+        text.add(getResources().getString(R.string.psed_2015));
+        text.add(getResources().getString(R.string.psed_2016));
+        text.add(getResources().getString(R.string.psed_2017));
 
         initRecyclerView();
     }

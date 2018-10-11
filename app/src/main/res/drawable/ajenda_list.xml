@@ -4,8 +4,10 @@
 
     <!-- View background color -->
     <solid
-        android:color="@color/gold" >
-    </solid>
+        android:color="@color/gold" />
 
+<corners
+    android:bottomRightRadius="40dp"
+    android:topRightRadius="40dp"/>
 
 </shape>

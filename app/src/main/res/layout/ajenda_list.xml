@@ -1,42 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_marginBottom="10dp"
+    android:clipToPadding="false"
+    android:clipChildren="false"
+    >
 
-    <View
-        android:id="@+id/line"
-        android:layout_width="5dp"
-        android:layout_height="40dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="36dp"
-        android:background="@color/gold" />
-
-    <RelativeLayout
+    <android.support.v7.widget.CardView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/line">
-    <TextView
-        android:id="@+id/time_ajenda"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/circle"
-        android:gravity="center"
-        android:text="12:00 "
-        android:textSize="24sp" />
+        android:layout_centerHorizontal="true"
+        android:elevation="6dp"
+        app:cardElevation="6dp"
+        app:cardCornerRadius="10dp"
+        android:clipToPadding="false"
+        android:clipChildren="false"
+        app:cardMaxElevation="15dp"
+        app:cardPreventCornerOverlap="false">
 
-    <TextView
-        android:id="@+id/title_ajenda"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_centerVertical="true"
-        android:layout_marginStart="71dp"
-        android:background="@drawable/ajenda_list"
-        android:gravity="center"
-        android:paddingLeft="8dp"
-        android:paddingRight="8dp"
-        android:text="starting of day "
-        android:textSize="24sp" />
-    </RelativeLayout>
+        <LinearLayout
+            android:paddingLeft="12dp"
+            android:paddingTop="50dp"
+            android:id="@+id/layout"
+            android:layout_width="310dp"
+            android:layout_height="160dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12:000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/time"
+                android:paddingTop="15dp"
+                android:text="MON"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="50dp"
+            android:layout_gravity="right"
+            android:layout_marginLeft="90dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="elblasy"
+                android:layout_marginLeft="25dp"
+                android:textColor="@color/gold"
+                android:textSize="24sp" />
+            <TextView
+                android:id="@+id/event"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="fnsafl kasfsa "
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
 </RelativeLayout>
