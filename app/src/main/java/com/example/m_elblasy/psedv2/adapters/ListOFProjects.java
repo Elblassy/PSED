@@ -22,7 +22,7 @@ public class ListOFProjects extends RecyclerView.Adapter<ListOFProjects.MyViewHo
     private static final String TAG = "ListOFProjects";
     private List<ProjectsList> projectsLists;
     private Context context;
-    CustomItemClickListener listener;
+    private CustomItemClickListener listener;
 
 
     public ListOFProjects(Context context, List<ProjectsList> projectsLists, CustomItemClickListener listener) {

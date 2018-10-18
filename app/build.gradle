@@ -52,11 +52,15 @@ dependencies {
     implementation 'com.jpardogo.googleprogressbar:library:1.2.0'
 
     //firebase
-    implementation 'com.google.firebase:firebase-core:16.0.3'
-    implementation 'com.google.firebase:firebase-database:16.0.2'
-    implementation 'com.google.firebase:firebase-auth:16.0.3'
+    implementation 'com.google.firebase:firebase-core:16.0.4'
+    implementation 'com.google.firebase:firebase-database:16.0.3'
+    implementation 'com.google.firebase:firebase-auth:16.0.5'
     implementation 'com.android.support:gridlayout-v7:27.1.1'
-    implementation 'com.google.firebase:firebase-storage:16.0.2'
+    implementation 'com.google.firebase:firebase-storage:16.0.3'
+
+    implementation 'com.chabbal:slidingdotsplash:1.0.2'
+
+    implementation 'fr.avianey.com.viewpagerindicator:library:2.4.1.1@aar'
 
 
 }

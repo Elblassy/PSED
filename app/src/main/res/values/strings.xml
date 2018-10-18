@@ -5,6 +5,13 @@
 
     <string name="action_settings">Settings</string>
 
+    <integer-array name="img_id_arr">
+        <item>@drawable/official</item>
+        <item>@drawable/golden</item>
+        <item>@drawable/platin</item>
+        <item>@drawable/bronze</item>
+    </integer-array>
+
 
     <string name="psed_2009">PSED 2009 was held on 28/10/2009,\n
         at Faculty of Engineering campus, Raising the slogan “Together… Start”.\n

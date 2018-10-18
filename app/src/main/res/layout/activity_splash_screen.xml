@@ -1,18 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#212121"
+    android:background="#fff"
     tools:context=".activities.SplashScreen">
 
 
-    <ImageView
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/splash"
-        android:scaleType="fitXY"/>
+        android:layout_height="match_parent"/>
 
+    <com.viewpagerindicator.CirclePageIndicator
+        android:id="@+id/indicator"
+        android:padding="10dp"
+        android:layout_marginBottom="30dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:fillColor="#212121"
+        app:pageColor="#ffffff"
+        app:strokeColor="#212121"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
 
-</android.support.constraint.ConstraintLayout>
+    <Button
+        android:id="@+id/skip"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:textSize="24sp"
+        android:visibility="gone"
+        android:background="@drawable/close"
+        android:onClick="skip"
+        android:textColor="@color/gold"/>
+
+</RelativeLayout>
