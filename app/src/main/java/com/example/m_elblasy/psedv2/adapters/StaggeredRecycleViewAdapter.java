@@ -95,30 +95,32 @@ public class StaggeredRecycleViewAdapter extends RecyclerView.Adapter<StaggeredR
                 Log.d(TAG, "onClick: clicked on: " + mTitles.get(position));
 
                 switch (position) {
-                    case 1:
+                    case 0:
                         ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation((Activity) mContext);
                         Intent intent = new Intent(mContext, HistoryOfPsed.class);
                         mContext.startActivity(intent,options.toBundle());
                         break;
+
+                    case 1:
+                        ActivityOptions options1 = ActivityOptions.makeSceneTransitionAnimation((Activity) mContext);
+                        Intent intent1 = new Intent(mContext, Projects.class);
+                        mContext.startActivity(intent1,options1.toBundle() );
+                        break;
+
 
                     case 2:
                         ActivityOptions options2 = ActivityOptions.makeSceneTransitionAnimation((Activity) mContext);
                         Intent intent2 = new Intent(mContext, Speakers.class);
                         mContext.startActivity(intent2,options2.toBundle());
                         break;
-                    case 3:
-                        ActivityOptions options1 = ActivityOptions.makeSceneTransitionAnimation((Activity) mContext);
-                            Intent intent1 = new Intent(mContext, Projects.class);
-                            mContext.startActivity(intent1,options1.toBundle() );
-                        break;
 
-                    case 4:
+                    case 3:
                         ActivityOptions options4 = ActivityOptions.makeSceneTransitionAnimation((Activity) mContext);
                         Intent intent4 = new Intent(mContext, Ajenda.class);
                         mContext.startActivity(intent4,options4.toBundle());
                         break;
 
-                    case 5:
+                    case 4:
                         ActivityOptions options3 = ActivityOptions.makeSceneTransitionAnimation((Activity) mContext);
                         Intent intent3 = new Intent(mContext, AboutUs.class);
                         mContext.startActivity(intent3,options3.toBundle());

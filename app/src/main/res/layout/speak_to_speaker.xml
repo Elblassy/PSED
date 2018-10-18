@@ -74,6 +74,7 @@
             android:layout_gravity="center_horizontal"
             android:background="@drawable/button"
             android:text="Send"
+            android:layout_marginBottom="5dp"
             android:textColor="@color/gold" />
     </LinearLayout>
 

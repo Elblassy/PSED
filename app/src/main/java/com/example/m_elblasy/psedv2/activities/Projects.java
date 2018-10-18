@@ -31,7 +31,7 @@ import java.util.List;
 
 public class Projects extends AppCompatActivity implements LoaderManager.LoaderCallbacks<List<ItemsForCells>> {
     private static final String TAG = "Projects";
-    private static final String JSON_PROJECTS_URL = "https://api.myjson.com/bins/us0ls";
+    private static final String JSON_PROJECTS_URL = "https://elblasypsed.000webhostapp.com/projects.json";
     //private static final List<String> JSON_PROJECTS_URL = "https://api.myjson.com/bins/pc04g";
     static CellsProjectsAdapter cellsProjectsAdapter;
     RecyclerView mRecyclerView;

@@ -7,7 +7,8 @@
     folding-cell:additionalFlipsCount="2"
     folding-cell:animationDuration="900"
     folding-cell:cameraHeight="10"
-    tools:context=".activities.Projects">
+    tools:context=".activities.Projects"
+    >
 
     <FrameLayout
         android:id="@+id/cell_content_view"
@@ -19,8 +20,6 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="361dp"
-            android:background="@drawable/border"
-            android:backgroundTint="#b6b6c2"
             android:backgroundTintMode="src_in"
             android:orientation="vertical">
 
@@ -35,6 +34,7 @@
            <android.support.v7.widget.RecyclerView
                android:id="@+id/list_item_cell"
                android:layout_width="wrap_content"
+               android:background="@drawable/border"
                android:layout_height="200dp">
 
            </android.support.v7.widget.RecyclerView>

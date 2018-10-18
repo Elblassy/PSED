@@ -116,8 +116,7 @@ public class Speakers extends AppCompatActivity implements LoaderManager.LoaderC
                 String dis = data.get(position).getDis();
                 disc.setText(dis);
                 name.setText(data.get(position).getName());
-                imageOfSpeaker.setImageBitmap(data.get(position).getImage());
-                imageOfSpeaker.setScaleY(2.5f);
+                imageOfSpeaker.setImageBitmap(data.get(position).getImage2());
 
                 //setup animation hasn't complete yet
                 if (data.indexOf(data.get(position)) == position) {

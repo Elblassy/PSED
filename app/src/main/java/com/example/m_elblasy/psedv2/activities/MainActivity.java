@@ -69,19 +69,17 @@ public class MainActivity extends AppCompatActivity {
     private void initImageBitmaps() {
         Log.d(TAG, "initImageBitmaps: preparing bitmaps.");
 
-        mImageUrls.add(R.drawable.anniversary);
-        mNames.add("What is PSED ?");
 
         mImageUrls.add(R.drawable.psed);
-        mNames.add("History");
-
-
-        mImageUrls.add(R.drawable.speakers);
-        mNames.add("Speakers");
+        mNames.add("Old PSED");
 
 
         mImageUrls.add(R.drawable.projects);
         mNames.add(" ");
+
+        mImageUrls.add(R.drawable.speakers);
+        mNames.add("Speakers");
+
 
         mImageUrls.add(R.drawable.ajenda);
         mNames.add("Ajenda");

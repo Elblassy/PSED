@@ -59,6 +59,7 @@ public class SpeakersData {
         try {
             JSONObject jsonObject = new JSONObject(speakersJSON);
             Bitmap imageUrl = null;
+            Bitmap imageUrl2 = null;
 
             //get JSon Array
             JSONArray array = jsonObject.getJSONArray("Speakers");
@@ -68,10 +69,16 @@ public class SpeakersData {
                 String name = speakers.getString("name");
 
                 String image = speakers.getString("image");
+
+                String image2 = "";
+                if(speakers.has("image2")){
+                    image2 = speakers.getString("image2");
+                    imageUrl2 = getSpeakerImage(image2);
+                }
                 String dis = speakers.getString("description");
                 imageUrl = getSpeakerImage(image);
 
-                ModelOfData modelOfData = new ModelOfData(name, imageUrl, dis);
+                ModelOfData modelOfData = new ModelOfData(name, imageUrl,imageUrl2, dis);
                 list.add(modelOfData);
             }
         } catch (Exception e) {
