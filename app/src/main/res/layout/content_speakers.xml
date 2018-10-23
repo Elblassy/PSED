@@ -54,6 +54,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="fmsaof;sanfas"
+                android:fontFamily="@font/aldrich"
                 android:textSize="30sp"
                 android:textStyle="bold"
                 android:textColor="#000"
@@ -68,6 +69,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="fmsaof;sanfas"
+                    android:fontFamily="@font/aldrich"
                     android:textSize="25sp"
                     android:visibility="gone" />
             </android.support.v4.widget.NestedScrollView>

@@ -77,7 +77,7 @@ public class Ajenda extends AppCompatActivity implements LoaderManager.LoaderCal
     private void initAnimation() {
 
         Slide enterTransition = new Slide();
-        enterTransition.setSlideEdge(Gravity.RIGHT);
+        enterTransition.setSlideEdge(Gravity.END);
         enterTransition.setDuration(getResources().getInteger(R.integer.anim_duration_very_long));
         enterTransition.setInterpolator(new AnticipateOvershootInterpolator());
         getWindow().setEnterTransition(enterTransition);

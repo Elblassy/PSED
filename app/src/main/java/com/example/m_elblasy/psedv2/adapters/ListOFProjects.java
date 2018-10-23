@@ -51,7 +51,6 @@ public class ListOFProjects extends RecyclerView.Adapter<ListOFProjects.MyViewHo
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         final ProjectsList list = projectsLists.get(position);
 
-        holder.disOfProject.setText(list.getDis());
 
         Glide.with(context)
                 .asBitmap()
@@ -72,12 +71,10 @@ public class ListOFProjects extends RecyclerView.Adapter<ListOFProjects.MyViewHo
     public class MyViewHolder extends RecyclerView.ViewHolder {
 
         private ImageView imageOfProject;
-        private TextView disOfProject;
 
         public MyViewHolder(View itemView) {
             super(itemView);
             imageOfProject = (ImageView) itemView.findViewById(R.id.image_projects_list);
-            disOfProject = (TextView) itemView.findViewById(R.id.nameofproject);
         }
     }
 

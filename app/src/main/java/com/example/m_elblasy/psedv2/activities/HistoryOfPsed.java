@@ -4,8 +4,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.transition.Explode;
+import android.transition.Slide;
+import android.view.Gravity;
 import android.view.Window;
+import android.view.animation.AnticipateOvershootInterpolator;
 
 import com.bumptech.glide.Glide;
 import com.example.m_elblasy.psedv2.R;
@@ -74,8 +76,10 @@ public class HistoryOfPsed extends AppCompatActivity {
 
     private void initAnimation(){
 
-        Explode enterTransition = new Explode();
-        enterTransition.setDuration(getResources().getInteger(R.integer.anim_duration_long));
+        Slide enterTransition = new Slide();
+        enterTransition.setSlideEdge(Gravity.END);
+        enterTransition.setDuration(getResources().getInteger(R.integer.anim_duration_very_long));
+        enterTransition.setInterpolator(new AnticipateOvershootInterpolator());
         getWindow().setEnterTransition(enterTransition);
     }
 

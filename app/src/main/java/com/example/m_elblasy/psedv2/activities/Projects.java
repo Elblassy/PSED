@@ -36,7 +36,8 @@ public class Projects extends AppCompatActivity implements LoaderManager.LoaderC
     static CellsProjectsAdapter cellsProjectsAdapter;
     RecyclerView mRecyclerView;
     List<ItemsForCells> data = new ArrayList<>();
-    ArrayList<ItemsForCells> list = new ArrayList<>();
+    ArrayList<ItemsForCells> titleList = new ArrayList<>();
+    ArrayList<ItemsForCells> contentList = new ArrayList<>();
     private static final int PROJECTS_LOADER_ID = 1;
     ProgressBar progressBar;
 
@@ -58,9 +59,9 @@ public class Projects extends AppCompatActivity implements LoaderManager.LoaderC
         noInternet = (ImageView)findViewById(R.id.noInternetConnection);
 
 
-        list = ItemsForCells.getList();
-
-        cellsProjectsAdapter = new CellsProjectsAdapter(this, list , data);
+        titleList = ItemsForCells.getTitleList();
+        contentList = ItemsForCells.getContentList();
+        cellsProjectsAdapter = new CellsProjectsAdapter(this, titleList,contentList, data);
         RecyclerView.LayoutManager mLayoutManager =
                 new LinearLayoutManager(getApplicationContext(), LinearLayoutManager.VERTICAL, false);
         mRecyclerView.setLayoutManager(mLayoutManager);

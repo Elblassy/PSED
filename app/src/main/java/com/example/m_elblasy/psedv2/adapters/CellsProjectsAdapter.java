@@ -19,6 +19,7 @@ import android.widget.ImageView;
 import android.widget.Scroller;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.example.m_elblasy.psedv2.CustomItemClickListener;
 import com.example.m_elblasy.psedv2.R;
 import com.example.m_elblasy.psedv2.list.ItemsForCells;
@@ -31,15 +32,17 @@ public class CellsProjectsAdapter extends RecyclerView.Adapter<CellsProjectsAdap
     private static final String TAG = "CellsProjectsAdapter";
     private Context context;
     private List<ItemsForCells> itemsForCells;
-    private List<ItemsForCells> items2;
+    private List<ItemsForCells> itemstitle;
+    private List<ItemsForCells> itemscontent;
     private Dialog myDialog;
     private Button back;
 
 
-    public CellsProjectsAdapter(Context context ,List<ItemsForCells> items2 , List<ItemsForCells> itemsForCells  ) {
+    public CellsProjectsAdapter(Context context ,List<ItemsForCells> itemstitle ,List<ItemsForCells> itemscontent, List<ItemsForCells> itemsForCells  ) {
         this.context = context;
         this.itemsForCells = itemsForCells;
-        this.items2 = items2;
+        this.itemstitle = itemstitle;
+        this.itemscontent = itemscontent;
     }
 
     @NonNull
@@ -56,13 +59,23 @@ public class CellsProjectsAdapter extends RecyclerView.Adapter<CellsProjectsAdap
     @Override
     public void onBindViewHolder(@NonNull final ViewHolder holder, int position) {
         final ItemsForCells items = itemsForCells.get(position);
-        final ItemsForCells items1 = items2.get(position);
+        final ItemsForCells items1 = itemstitle.get(position);
+        final ItemsForCells items2 = itemscontent.get(position);
         final int i = position;
 
         Log.i(TAG, "mostafa: " + position);
 
         try {
-            holder.titleImageView.setImageResource(items1.getImage1());
+            Glide.with(context)
+                    .asBitmap()
+                    .load(items1.getTitleImage())
+                    .into(holder.titleImageView);
+
+           /* Glide.with(context)
+                    .asBitmap()
+                    .load(items2.getTitleImage())
+                    .into(holder.contentImageView);*/
+
             ListOFProjects projectsList = new ListOFProjects(context, items.getListOFProjects().get(position), new CustomItemClickListener() {
                 @Override
                 public void onItemClick(View v, int position) {
@@ -96,13 +109,14 @@ public class CellsProjectsAdapter extends RecyclerView.Adapter<CellsProjectsAdap
 
     @Override
     public int getItemCount() {
-        return items2.size();
+        return itemstitle.size();
     }
 
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
 
         ImageView titleImageView;
+        ImageView contentImageView;
         FoldingCell foldingCell;
         RecyclerView recyclerView;
 
@@ -110,6 +124,7 @@ public class CellsProjectsAdapter extends RecyclerView.Adapter<CellsProjectsAdap
             super(itemView);
 
             titleImageView = (ImageView) itemView.findViewById(R.id.title_image_cell);
+           // contentImageView= (ImageView) itemView.findViewById(R.id.content_image_cell);
             foldingCell = (FoldingCell) itemView.findViewById(R.id.folding_cell);
             recyclerView = (RecyclerView) itemView.findViewById(R.id.list_item_cell);
 

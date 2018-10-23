@@ -12,7 +12,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ItemsForCells {
-    private int images;
+    private int titleImage;
+    private int contentImage;
     private Bitmap image;
     private ArrayList<ArrayList<ProjectsList>> listOFProjects = new ArrayList<>(7);
 
@@ -24,13 +25,17 @@ public class ItemsForCells {
     }
 
     public ItemsForCells(int image) {
-        this.images = image;
+        this.titleImage = image;
     }
 
 
+    public int getContentImage() {
+        return contentImage;
+    }
 
-    public int getImages() {
-        return images;
+    public ItemsForCells setContentImage(int contentImage) {
+        this.contentImage = contentImage;
+        return null;
     }
 
     public ArrayList<ArrayList<ProjectsList>> getListOFProjects() {
@@ -45,15 +50,15 @@ public class ItemsForCells {
         return image;
     }
 
-    public int getImage1() {
-        return images;
+    public int getTitleImage() {
+        return titleImage;
     }
 
     public void setImage(Bitmap image) {
         this.image = image;
     }
 
-     public static ArrayList<ItemsForCells> getList() {
+     public static ArrayList<ItemsForCells> getTitleList() {
         ArrayList<ItemsForCells> items = new ArrayList<>();
         items.add(new ItemsForCells(R.drawable.computer));
         items.add(new ItemsForCells(R.drawable.communication));
@@ -66,5 +71,20 @@ public class ItemsForCells {
          items.add(new ItemsForCells(R.drawable.gas));
          items.add(new ItemsForCells(R.drawable.chemical));
          return items;
+    }
+
+    public static ArrayList<ItemsForCells> getContentList() {
+        ArrayList<ItemsForCells> items = new ArrayList<>();
+        items.add(new ItemsForCells().setContentImage(R.drawable.computerin));
+        items.add(new ItemsForCells().setContentImage(R.drawable.communicationin));
+        items.add(new ItemsForCells().setContentImage(R.drawable.powerin));
+        items.add(new ItemsForCells().setContentImage(R.drawable.archin));
+        items.add(new ItemsForCells().setContentImage(R.drawable.civilin));
+        items.add(new ItemsForCells().setContentImage(R.drawable.prodin));
+        items.add(new ItemsForCells().setContentImage(R.drawable.mechanicin));
+        items.add(new ItemsForCells().setContentImage(R.drawable.marinein));
+        items.add(new ItemsForCells().setContentImage(R.drawable.gasin));
+        items.add(new ItemsForCells().setContentImage(R.drawable.chemistryin));
+        return items;
     }
 }

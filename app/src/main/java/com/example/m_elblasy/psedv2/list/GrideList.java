@@ -7,10 +7,12 @@ import java.util.List;
 
 public class GrideList {
 
-    private int image ;
+    private int image;
     private String name;
 
+
     public GrideList() {
+
     }
 
     public GrideList(int image, String name) {
@@ -26,67 +28,124 @@ public class GrideList {
         return name;
     }
 
-    public List<GrideList> listOfDesigner(){
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public List<GrideList> listOfDesigner() {
         ArrayList<GrideList> items = new ArrayList<>();
-        items.add(new GrideList(R.drawable.d1,"elkholany"));
-        items.add(new GrideList(R.drawable.d2,"wwwqeq"));
-        items.add(new GrideList(R.drawable.d4,"yweywe"));
-        items.add(new GrideList(R.drawable.d5,"yery"));
-        items.add(new GrideList(R.drawable.d6,"elkholany"));
-        items.add(new GrideList(R.drawable.d7,"yrwey"));
-        items.add(new GrideList(R.drawable.d8,"elkholany"));
-        items.add(new GrideList(R.drawable.d9,"eqewqewq"));
-        items.add(new GrideList(R.drawable.d10,"elkholany"));
-        items.add(new GrideList(R.drawable.d11,"jvfjf"));
+
+        items.add(new GrideList(R.drawable.design11, "Muhammad Nabil"));
+        items.add(new GrideList(R.drawable.design12, "Mostafa Essam"));
+        items.add(new GrideList(R.drawable.design3, "Muhammad Elblasy"));
+        items.add(new GrideList(R.drawable.design1, "Ali"));
+        items.add(new GrideList(R.drawable.design2, "Ahmed Oraby"));
+        items.add(new GrideList(R.drawable.design4, "Hamooda"));
+        items.add(new GrideList(R.drawable.design5, "Marawan Bakr"));
+        items.add(new GrideList(R.drawable.design6, "Mowafy"));
+        items.add(new GrideList(R.drawable.design7, "Reham"));
+        items.add(new GrideList(R.drawable.design8, "Yasmin"));
+        items.add(new GrideList(R.drawable.design9, "Noha"));
+        items.add(new GrideList(R.drawable.design10, "El nahala"));
+
 
         return items;
     }
 
-    public List<GrideList> listOfSecrtary(){
+    public List<GrideList> listOfSecrtary() {
         ArrayList<GrideList> items = new ArrayList<>();
-        items.add(new GrideList(R.drawable.s1,"yasmeen"));
-        items.add(new GrideList(R.drawable.s2,"fsafsaf"));
-        items.add(new GrideList(R.drawable.s4,"yqtqwtwq"));
-        items.add(new GrideList(R.drawable.s5,"tttteteq"));
-        items.add(new GrideList(R.drawable.s6,"hgfhj"));
-        items.add(new GrideList(R.drawable.s3,"mbcmb"));
-        items.add(new GrideList(R.drawable.s8,"jfdjd"));
-        items.add(new GrideList(R.drawable.s7,"yeryew"));
+        items.add(new GrideList(R.drawable.sec2, "Ahmed Azzam"));
+        items.add(new GrideList(R.drawable.sec3, "Salma Yasser"));
+        items.add(new GrideList(R.drawable.sec4, "Mariam Hazem"));
+        items.add(new GrideList(R.drawable.sec5, "Hager Helmy"));
+        items.add(new GrideList(R.drawable.sec6, "Essra"));
+        items.add(new GrideList(R.drawable.sec7, "Toka Taha"));
+        items.add(new GrideList(R.drawable.sec8, "Muhammad Heba"));
+        items.add(new GrideList(R.drawable.sec9, "Amr Akram"));
+        items.add(new GrideList(R.drawable.sec10, "Mazen"));
+        items.add(new GrideList(R.drawable.noora, "Noora"));
+
 
         return items;
     }
-    public List<GrideList> listOfMarket(){
+
+    public List<GrideList> listOfMedia() {
         ArrayList<GrideList> items = new ArrayList<>();
-        items.add(new GrideList(R.drawable.m1,"rwqrqwr"));
-        items.add(new GrideList(R.drawable.m2,"safasfqw"));
-        items.add(new GrideList(R.drawable.m4,"elkholany"));
-        items.add(new GrideList(R.drawable.m5,"4124124"));
-        items.add(new GrideList(R.drawable.m6,"fasasfas"));
-        items.add(new GrideList(R.drawable.m7,"elkholany"));
-        items.add(new GrideList(R.drawable.m8,"elkholany"));
-        items.add(new GrideList(R.drawable.m12,"uyrue"));
-        items.add(new GrideList(R.drawable.m10,"jfjytf"));
-        items.add(new GrideList(R.drawable.m11,"ouyto"));
+        items.add(new GrideList(R.drawable.media1, "Rowan"));
+        items.add(new GrideList(R.drawable.media2, "Mariam Elsehrawy"));
+        items.add(new GrideList(R.drawable.media3, "Shrouk"));
+        items.add(new GrideList(R.drawable.media4, "Alaa Soliman"));
+        items.add(new GrideList(R.drawable.media5, "Amr Gohar"));
+        items.add(new GrideList(R.drawable.media6, "Mohab"));
+        items.add(new GrideList(R.drawable.media7, "Mariez"));
+        items.add(new GrideList(R.drawable.media8, "Noran Elgayar"));
+        items.add(new GrideList(R.drawable.media9, "Muhammad Elrefay"));
+        items.add(new GrideList(R.drawable.media10, "Reem Medhat"));
+
 
         return items;
     }
-    public List<GrideList> listOfRelation(){
+
+    public List<GrideList> listOfRelation() {
         ArrayList<GrideList> items = new ArrayList<>();
-        items.add(new GrideList(R.drawable.r1,"yukiyti"));
-        items.add(new GrideList(R.drawable.r2,"ewqewqeqw"));
-        items.add(new GrideList(R.drawable.r4,"fsafasf"));
-        items.add(new GrideList(R.drawable.r3,"weqeqwe"));
+        items.add(new GrideList(R.drawable.pr1, "Yasmin Elkatanty"));
+        items.add(new GrideList(R.drawable.pr2, "Reem Hassan"));
+        items.add(new GrideList(R.drawable.pr3, "Ezz"));
+        items.add(new GrideList(R.drawable.pr4, "Shimaa Moftah"));
+        items.add(new GrideList(R.drawable.pr5, "Meram"));
+        items.add(new GrideList(R.drawable.pr6, "Alaa Adel"));
+        items.add(new GrideList(R.drawable.pr7, "henazada"));
+        items.add(new GrideList(R.drawable.sodfa, "Sodfa Diab"));
+
 
         return items;
     }
-    public List<GrideList> listOfProduction(){
+
+    public List<GrideList> listOfProduction() {
         ArrayList<GrideList> items = new ArrayList<>();
-        items.add(new GrideList(R.drawable.p1,"lhgkfhgk"));
-        items.add(new GrideList(R.drawable.p2,"hcncv"));
-        items.add(new GrideList(R.drawable.p4,"yeyet"));
-        items.add(new GrideList(R.drawable.p5,"kgkmb"));
-        items.add(new GrideList(R.drawable.p6,"hsdgsge"));
-        items.add(new GrideList(R.drawable.p3,"jhgfjhjhd"));
+        items.add(new GrideList(R.drawable.abdulmenaamp, "Abdekmonem Sharaf"));
+        items.add(new GrideList(R.drawable.ahmedsamirp, "Ahmed Samir Sherif"));
+        items.add(new GrideList(R.drawable.mohammedsamip, "Muhammad Samy"));
+        items.add(new GrideList(R.drawable.omaralaa, "Omar Hamed"));
+        items.add(new GrideList(R.drawable.pu2, "Hossam"));
+        items.add(new GrideList(R.drawable.pu4, "Muhammad Mamdouh"));
+        items.add(new GrideList(R.drawable.pu5, "Kamal"));
+        items.add(new GrideList(R.drawable.pu6, "Muhammad Samy"));
+
+
+        return items;
+    }
+
+    public List<GrideList> listOfTeam() {
+        ArrayList<GrideList> items = new ArrayList<>();
+        items.add(new GrideList(R.drawable.teams1, "Amr Elzanaty"));
+        items.add(new GrideList(R.drawable.teams2, "Huda Abdel-ghany"));
+        items.add(new GrideList(R.drawable.teams3, "Omar elsaka"));
+        items.add(new GrideList(R.drawable.teams4, ""));
+        items.add(new GrideList(R.drawable.teams5, "Muhammad Ashraf"));
+        items.add(new GrideList(R.drawable.teams6, "Shereef"));
+        items.add(new GrideList(R.drawable.teams7, "Muhammad nasser"));
+        items.add(new GrideList(R.drawable.teams8, "Abdulrahaman Sultan"));
+
+
+        return items;
+    }
+
+    public List<GrideList> listOfFounders() {
+        ArrayList<GrideList> items = new ArrayList<>();
+        items.add(new GrideList(R.drawable.fund1, "Hala Adel"));
+        items.add(new GrideList(R.drawable.fund2, "Ahmed Alaa"));
+        items.add(new GrideList(R.drawable.fund3, "Dina Eloarabany"));
+        items.add(new GrideList(R.drawable.fund4, "Elhadidy"));
+        items.add(new GrideList(R.drawable.fund5, "Muhammad Eyad"));
+        items.add(new GrideList(R.drawable.fund6, "hager"));
+        items.add(new GrideList(R.drawable.fund7, "Hazem Leheta"));
+        items.add(new GrideList(R.drawable.fund8, "Ahmed Kazlak"));
+        items.add(new GrideList(R.drawable.fund9, "Omar Hossam"));
+        items.add(new GrideList(R.drawable.fund10, "Mahmoud Mohssen"));
+        items.add(new GrideList(R.drawable.fund11, "Rawan Elsady"));
+        items.add(new GrideList(R.drawable.fund12, "Muhammad Khalil"));
+        items.add(new GrideList(R.drawable.reemmoahmmedfr, "Reem Mohamed"));
 
         return items;
     }

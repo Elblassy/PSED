@@ -7,8 +7,14 @@
     android:background="#fff"
     tools:context=".activities.SplashScreen">
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/splash"
+        android:scaleType="centerCrop"/>
 
-    <android.support.v4.view.ViewPager
+
+    <!--android.support.v4.view.ViewPager
         android:id="@+id/pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
@@ -36,6 +42,6 @@
         android:visibility="gone"
         android:background="@drawable/close"
         android:onClick="skip"
-        android:textColor="@color/gold"/>
+        android:textColor="@color/gold"/-->
 
 </RelativeLayout>

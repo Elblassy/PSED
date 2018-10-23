@@ -60,6 +60,7 @@ public class Speakers extends AppCompatActivity implements LoaderManager.LoaderC
     ProgressBar progressBar;
     DatabaseReference storage;
     private ImageView emptyView,noInternet;
+    FloatingActionButton fab;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -81,7 +82,7 @@ public class Speakers extends AppCompatActivity implements LoaderManager.LoaderC
         imageOfTitle = (ImageView) findViewById(R.id.title_image);
         progressBar = (ProgressBar) findViewById(R.id.progressbar_speaker);
         data = new ArrayList<>();
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+         fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -176,6 +177,7 @@ public class Speakers extends AppCompatActivity implements LoaderManager.LoaderC
             data.addAll(modelOfData);
             mRecyclerView.setAdapter(mAdapter);
             mAdapter.notifyDataSetChanged();
+            fab.setVisibility(View.VISIBLE);
         } else {
             emptyView.setVisibility(View.VISIBLE);
         }
@@ -220,7 +222,8 @@ public class Speakers extends AppCompatActivity implements LoaderManager.LoaderC
         String mQuestion = question.getText().toString();
         if (!mSpeakerNmae.isEmpty() && !mQuestion.isEmpty()) {
             Questions questions = new Questions(mSpeakerNmae, mQuestion);
-            String id = storage.child("speaker").push().getKey();            storage.child(id).setValue(questions);
+            String id = storage.child("speaker").push().getKey();
+            storage.child(id).setValue(questions);
             myDialog.dismiss();
             Toast.makeText(this, "Question sent...", Toast.LENGTH_LONG).show();
         } else {
@@ -232,7 +235,7 @@ public class Speakers extends AppCompatActivity implements LoaderManager.LoaderC
     private void initAnimation() {
 
         Slide enterTransition = new Slide();
-        enterTransition.setSlideEdge(Gravity.RIGHT);
+        enterTransition.setSlideEdge(Gravity.END);
         enterTransition.setDuration(getResources().getInteger(R.integer.anim_duration_very_long));
         enterTransition.setInterpolator(new AnticipateOvershootInterpolator());
         getWindow().setEnterTransition(enterTransition);
