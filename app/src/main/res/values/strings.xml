@@ -2,7 +2,7 @@
     <string name="app_name">PSED</string>
     <string name="title_activity_speakers">Speakers</string>
     <string name="title_activity_projects">Projects</string>
-
+    <string name="spinner_title">Select Speaker</string>
     <string name="action_settings">Settings</string>
 
     <integer-array name="img_id_arr">
@@ -11,6 +11,42 @@
         <item>@drawable/platin</item>
         <item>@drawable/bronze</item>
     </integer-array>
+
+    <string name="title">Book your place at the visitors"'"\n registration through the app</string>
+
+    <string name="dr_heba">10 years of propagation PSED ideas
+        and goals to make businessmen and sponsors
+        believe in who we are and to continue our great mission.</string>
+
+    <string name="design">Great design is a multi-layered relationship
+        between human life and its environment.
+        </string>
+
+    <string name="secretary">Secretary committee members are our silent workers,
+        they are responsible
+        for gathering and documenting every piece of information
+        about the event</string>
+
+    <string name="procurement">The procurement team is the team in charge of using
+        the funds provided and
+        finding the best financial offers in order to finalize all the
+        preparations for PSED</string>
+
+    <string name="marketing">The Marketing Committee of Port Said Engineering Day was the main
+        objective over ten years to create
+        a relationship between the organization team and
+        today events between people</string>
+
+    <string name="Fund">Fund raising is the gentle art of teaching the joy of giving.” –
+        Hank Rosso PSED FR team is the prior team who’s responsible for this art</string>
+
+    <string name="PR"> The Public Relations Committee (PR) is responsible
+        for linking PSED with the outside world,</string>
+
+    <string name="Projects">Projects Committee The
+        committee is responsible for coordination with
+        the participating projects in Port Said Engineering
+        Day</string>
 
 
     <string name="psed_2009">PSED 2009 was held on 28/10/2009,\n
@@ -158,5 +194,7 @@ The event was organized by 80 volunteers,\n
         It was attended by 3200 visitors, in addition to 400 VIPs.
 
 </string>
+    <string name="notifications_admin_channel_name">notify</string>
+    <string name="notifications_admin_channel_description">notify1</string>
 
 </resources>

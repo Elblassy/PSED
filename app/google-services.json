@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:645485518697:android:3b91a6d0d6acc955",
         "android_client_info": {
-          "package_name": "com.example.m_elblasy.psedv2"
+          "package_name": "com.elblasy.m_elblasy.psedv2"
         }
       },
       "oauth_client": [
@@ -18,7 +18,7 @@
           "client_id": "645485518697-im4f17kh8ca26c01nuf6me0ec2pa7bdb.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.m_elblasy.psedv2",
+            "package_name": "com.elblasy.m_elblasy.psedv2",
             "certificate_hash": "443a6cf4cbfb33a10a43f884c2d1fbe76a91737c"
           }
         },

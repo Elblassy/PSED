@@ -11,7 +11,7 @@
     <LinearLayout
         android:id="@+id/layout1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="90dp"
         android:orientation="horizontal"
         >
 
@@ -22,21 +22,22 @@
             android:fontFamily="@font/aldrich"
             android:layout_marginStart="10dp"
             android:layout_marginTop="8dp"
+            android:layout_gravity="center"
             android:text="PSED"
             android:textColor="@color/gold"
-            android:textSize="40sp"
+            android:textSize="45dp"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="5dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="12dp"
             android:fontFamily="@font/aldrich"
             android:text="march 10"
             android:textColor="#000000"
-            android:textSize="24sp" />
+            android:textSize="35dp" />
 
 
     </LinearLayout>
@@ -46,7 +47,6 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
     <LinearLayout
-        android:layout_below="@id/layout1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -60,15 +60,49 @@
 
         </android.support.v7.widget.RecyclerView>
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:layout_gravity="center">
+        <ImageView
+            android:id="@+id/twitter"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/twitter"/>
+            <ImageView
+                android:id="@+id/face"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/fb"/>
+            <ImageView
+                android:id="@+id/insta"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/insta"/>
+        </LinearLayout>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Made by Elblasy and Mostafa"
-            android:fontFamily="@font/aldrich"
-            android:textColor="#000"
-            android:textSize="24sp" />
-
+            android:text="© 2019 PSED"
+            />
+        <TextView
+            android:id="@+id/id_counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/gold"
+            android:text="B-9250--2018-10-27 03:06"
+            />
     </LinearLayout>
 </android.support.v4.widget.NestedScrollView>
+
 </RelativeLayout>

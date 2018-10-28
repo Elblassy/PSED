@@ -50,7 +50,7 @@
                 android:shadowRadius="15"
                 android:text="PSED"
                 android:textColor="#FFF"
-                android:textSize="28sp" />
+                android:textSize="28dp" />
 
             <com.jpardogo.android.googleprogressbar.library.GoogleProgressBar
                 android:id="@+id/progressBar"
